@@ -22,6 +22,10 @@ const LoginForm = () => {
         setShowModalInfo(false);
     };
 
+    const showModal = () => {
+        setShowModalInfo(true);
+    }
+
     return (
         <motion.div
             initial={{opacity: 0, y: -70}}
@@ -59,6 +63,7 @@ const LoginForm = () => {
                     </div>
                     <div className="button-container">
                         <button type="submit">Submit</button>
+                        <button onClick={showModal}>Mostrar Modal</button>
                     </div>
                 </form>
             </div>
