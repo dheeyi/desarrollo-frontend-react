@@ -61,6 +61,16 @@ const LoginForm = () => {
                             onChange={handleChange}
                         />
                     </div>
+                    <div>
+                        <label htmlFor="email">Password</label>
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            value={values.password}
+                            onChange={handleChange}
+                        />
+                    </div>
                     <div className="button-container">
                         <button type="submit">Submit</button>
                         <button onClick={showModal}>Mostrar Modal</button>
